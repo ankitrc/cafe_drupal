@@ -1,0 +1,13 @@
+name: Views Aggregator Plus
+type: module
+description: A Views plugin that operates on the results <em>after</em> the database query has run, thus offering aggregation functions not otherwise possible.
+package: Views
+# core: 8.x
+dependencies:
+  - drupal:views
+
+# Information added by Drupal.org packaging script on 2018-03-17
+version: '8.x-1.x-dev'
+core: '8.x'
+project: 'views_aggregator'
+datestamp: 1521278287
