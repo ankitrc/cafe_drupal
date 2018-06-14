@@ -1,0 +1,14 @@
+/**
+ * Place your custom styles here.
+ */
+
+.user-logged-in.path-admin.has-glyphicons .breadcrumb{
+    /* background-color: black; */
+    display: none;
+}
+
+
+/* #block-ak-operation-2{
+    margin-top: 0%;
+    padding-top: 0%
+} */
