@@ -1,0 +1,7 @@
+<?php
+  function selection_user_login($account){
+    drupal_set_message('heyy');
+    $res = new \Symfony\Component\HttpFoundation\RedirectResponse(\Drupal::url('https://www.google.com',[], ['absolute' => TRUE]));
+    $res->send();
+    return;
+  }

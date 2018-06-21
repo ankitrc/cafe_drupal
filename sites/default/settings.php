@@ -795,6 +795,16 @@ $databases['default']['default'] = array (
   'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
   'driver' => 'mysql',
 );
+$databases['default']['testing'] = array(
+  'database' => 'testing',
+  'username' => 'root',
+  'password' => '',
+  'prefix' => '',
+  'host' => '127.0.0.1',
+  'port' => '3307',
+  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+  'driver' => 'mysql',
+);
 $settings['install_profile'] = 'standard';
 $config_directories['sync'] = 'sites/default/files/config_YUkuRp1Wujg965pfObBWEghGiM5-RJ7MwVKROvbMmJV2bgzAdeU_6JFFCk3vcqu_gTnwnZei_A/sync';
  $settings['trusted_host_patterns'] = array(

@@ -1,0 +1,8 @@
+hello_world:
+  path: '/select/{user}'
+  defaults:
+    _title: 'select table'
+    _form: '\Drupal\selection\selecting\select_table'
+    user: 'mohit'
+  requirements:
+    _permission: 'restrict access'
