@@ -1,0 +1,3 @@
+services:
+  selection.say_hello:
+    class: Drupal\selection\check\conn

@@ -1,0 +1,19 @@
+/**
+ * Place your custom styles here.
+ */
+
+.user-logged-in.path-admin.has-glyphicons .breadcrumb{
+    /* background-color: black; */
+    display: none;
+}
+/*toolbar-tray-open toolbar-fixed user-logged-in path-show-food has-glyphicons toolbar-vertical*/
+.field.field--name-field-images.field--type-image.field--label-hidden.field--item img{
+    height: 100px;
+    width: 100px;
+    /* background-color: black; */
+}
+
+/* #block-ak-operation-2{
+    margin-top: 0%;
+    padding-top: 0%
+} */

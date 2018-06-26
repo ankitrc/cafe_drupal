@@ -7,4 +7,7 @@
       public static function db_connect(){
         return \Drupal::database();
       }
+      public static function hey(){
+        return 'yuppssswwwss';
+      }
   }

@@ -1,0 +1,29 @@
+/**
+ * Place your custom styles here.
+ */
+
+.user-logged-in.path-admin.has-glyphicons {
+    .breadcrumb{
+        display: none;
+    }
+    .form-item-roles-administrator{
+        display: none;
+    }
+}
+/*toolbar-tray-open toolbar-fixed user-logged-in path-show-food has-glyphicons toolbar-vertical*/
+.view-content
+{
+    img{
+        height: 100px;
+        width: 100px;
+    }
+}
+
+
+
+// .user-logged-in.path-admin.has-glyphicons .control-label.option{
+//     display: none;
+// }
+// .control-label.option{
+//     display: none;
+// }

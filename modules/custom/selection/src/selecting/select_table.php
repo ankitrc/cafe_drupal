@@ -1,11 +1,13 @@
 <?php
   use Drupal\Core\Url;
   //use Symfony\Component\HttpFoundation\RedirectResponse;
+  use Symfony\Component\Debug\Debug;
   namespace Drupal\selection\selecting;
   use Drupal\Core\Form\FormBase;
   use Drupal\Core\Form\FormStateInterface;
   use Drupal\selection\selecting\change_status;
   use Drupal\selection\check\conn;
+  \Symfony\Component\Debug\Debug::enable();
   class select_table extends FormBase {
     public $cid;
     private function update_record($table_nums){

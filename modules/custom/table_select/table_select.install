@@ -1,0 +1,22 @@
+<?php
+
+function table_select_schema() {
+  $schema['table_no'] = array(
+    'fields' => array(
+      'tb_num'=>array(
+        'type'=>'serial',
+        'not null' => TRUE,
+      ),
+      'status'=>array(
+        'type' => 'int',
+        'length' => 10,
+        'not null' => TRUE,
+        'default' => 0,
+      ),
+    ),
+    'primary key' => array('tb_num'),
+  );
+
+  return $schema;
+
+}

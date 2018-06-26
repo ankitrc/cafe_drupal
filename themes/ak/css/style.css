@@ -1,14 +1,14 @@
 /**
  * Place your custom styles here.
  */
+.user-logged-in.path-admin.has-glyphicons .breadcrumb {
+  display: none; }
+.user-logged-in.path-admin.has-glyphicons .form-item-roles-administrator {
+  display: none; }
 
-.user-logged-in.path-admin.has-glyphicons .breadcrumb{
-    /* background-color: black; */
-    display: none;
-}
+/*toolbar-tray-open toolbar-fixed user-logged-in path-show-food has-glyphicons toolbar-vertical*/
+.view-content img {
+  height: 100px;
+  width: 100px; }
 
-
-/* #block-ak-operation-2{
-    margin-top: 0%;
-    padding-top: 0%
-} */
+/*# sourceMappingURL=style.css.map */
