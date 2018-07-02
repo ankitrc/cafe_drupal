@@ -1,0 +1,6 @@
+alter1:
+  path: '/forms'
+  defaults:
+    _title: 'alter the form'
+  requirements:
+    _permission: 'access content'

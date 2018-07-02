@@ -1,5 +1,5 @@
 hello_world:
-  path: '/select/{user}'
+  path: '/select'
   defaults:
     _title: 'select table'
     _form: '\Drupal\selection\selecting\select_table'

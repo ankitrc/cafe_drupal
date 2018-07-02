@@ -1,0 +1,14 @@
+<?php   
+/*    function conf_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id){
+        if($form_id == 'node_article_form'){
+            $forms = \Drupal::formBuilder()->getForm('\Drupal\table_select\selecting\select_table');
+            // dpm('hey');
+            // dpm($forms);
+            $form = $forms;
+            ob_start();
+            kint($form);
+        }
+        
+        // dpm(gettype($form));
+    }
+*/

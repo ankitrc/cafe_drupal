@@ -1,0 +1,20 @@
+content.cnt1:
+  path: /content
+  defaults:
+    _title: 'custom content'
+    # _form: Drupal\content\forms\frm
+    _controller: Drupal\content\cont\display::control
+  requirements:
+    _permission: 'access content'
+  
+
+# content.cnt2:
+#   path: /content
+#   defaults:
+#     _title: 'custom content'
+#     # _form: Drupal\content\forms\frm
+#     _controller: Drupal\content\cont\display::control
+#   requirements:
+#     _permission: 'access content'
+  
+

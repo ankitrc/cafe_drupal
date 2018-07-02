@@ -1,0 +1,34 @@
+<?php 
+function alter1_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+	dpm('test');	
+	dpm($form_id);
+	#dpm($form);
+	#foreach($form_state['values'] as $field => $value){
+		#dpm($field);	
+	#}
+	$fieldnames = array();  
+	foreach ($form as $key=>$val){
+	    if (substr($key, 0, 1) == '#'){ 
+	      $fieldnames[] = $key;
+	    }
+	}
+	dpm($fieldnames);
+
+	#dpm($form_state->field_name);
+	if($form_id == 'node_article_form'){
+		dpm('hello');	
+		$form['field_message'] = array(
+			'#type' => 'item',
+			'#title' => t('New article'),
+			'#markup' => t('You are about to create a new article'),
+			'#weight' => -6,	
+		);
+		 #$form['title']['#title'] = t('New Form Title');
+	}
+	$form['body']['#default_value'] = 'masti';
+	$form['title']['#title'] = array();
+	#$form['field_tags']['#title'] = t('hellyeah');
+	
+}
+
+

@@ -1,0 +1,28 @@
+<div>
+	<div>
+		{{htmls}}
+	</div>
+	<div> 
+		{% for key , value in a %}
+			<div class = "col-sm-4">
+			{% for k,v in value %}
+				{% if k == 0 %}
+					<div> <b> {{v}} </b> </div>
+				{# {% endif %} #}
+				{% elseif k == 1 %}
+					<div> <img src={{v}} alt="NA" height="100" width ="100"> </div>
+				{# {% endif %} #}
+				{% elseif k == 2 %}
+					<div> price : {{v}} </div>
+				{# {% endif %} #}
+				{% elseif k == 3 %}
+					<div> category : {{v}} </div>
+				{% endif %}
+
+			{% endfor %}
+			</div>
+		{% endfor %}
+
+	</div>
+    
+</div>

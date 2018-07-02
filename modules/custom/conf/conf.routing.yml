@@ -1,0 +1,7 @@
+conf:
+  path: '/config'
+  defaults:
+    _title: 'config check'
+    _form: '\Drupal\conf\forms\check'
+  requirements:
+    _permission: 'access content'

@@ -1,0 +1,7 @@
+newForm:
+  path: '/some_url'
+  defaults:
+    _title: 'new url'
+    _form: '\Drupal\table_select\selecting\select_table'
+  requirements:
+    _permission: 'access content'

@@ -1,0 +1,5 @@
+name: configuation check
+description: config class
+core: 8.x
+package: Custom
+type: module
