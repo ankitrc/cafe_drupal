@@ -2,6 +2,9 @@
 	<div>
 		{{htmls}}
 	</div>
+	<div>
+		{# {{s}} #}
+	</div>
 	<div> 
 		{% for key , value in a %}
 			<div class = "col-sm-4">
@@ -17,6 +20,10 @@
 				{# {% endif %} #}
 				{% elseif k == 3 %}
 					<div> category : {{v}} </div>
+				{% elseif k == 4%}
+				<form method = "post" action = "">
+					<div> <button name = "{{v}}" value = "{{v}}">add to cart</button> </div>
+				</form>
 				{% endif %}
 
 			{% endfor %}
