@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.book_detail
+  module:
+    - text
+id: node.book_detail.body
+field_name: body
+entity_type: node
+bundle: book_detail
+label: 'Book Detail'
+description: 'More specific information about the book.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

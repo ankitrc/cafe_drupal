@@ -1,0 +1,34 @@
+langcode: en
+status: true
+dependencies:
+    config:
+        - core.entity_view_mode.node.teaser
+        - field.field.node.book_detail.body
+        - field.field.node.book_detail.full_name
+        - node.type.book_detail
+    module:
+        - text
+        - user
+id: node.book_detail.teaser
+targetEntityType: node
+bundle: book_detail
+mode: teaser
+content:
+    body:
+        label: hidden
+        type: text_summary_or_trimmed
+        weight: 101
+        settings:
+            trim_length: 600
+        third_party_settings: {  }
+    links:
+        weight: 100
+    full_name:
+        type: text_summary_or_trimmed
+        weight: 101
+        settings:
+            trim_length: 600
+        third_party_settings: {  }
+    links:
+        weight: 100
+hidden: {  }

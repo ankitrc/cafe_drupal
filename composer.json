@@ -6,7 +6,8 @@
     "require": {
         "composer/installers": "^1.0.24",
         "wikimedia/composer-merge-plugin": "^1.4",
-        "drupal/commerce": "^2.7"
+        "drupal/commerce": "^2.7",
+        "drupal/admin_toolbar": "^1.24"
     },
     "replace": {
         "drupal/core": "^8.5"

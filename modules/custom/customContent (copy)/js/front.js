@@ -5,12 +5,12 @@ function sendData(val){
         'use strict';
         /* CODE GOES HERE */
         // console.log('start');
-        $('#ak').load('update',{add: val,function(){
+        $('#ak').load('update',{add: val},function(){
             console.log('completed it');
-        }});
-      
+        });
+
       })(jQuery, Drupal);
-    
+
 }
 
 function removeData(val){
@@ -20,10 +20,11 @@ function removeData(val){
         'use strict';
         /* CODE GOES HERE */
         console.log('start');
-        $('#rm').load('update',{remove: val,function(){
+        $('#rm').load('update',{remove: val},function(){
             console.log('removed');
-            setTimeout(location.reload(true),3);
-        }});
+            location.reload(true);
+            // setTimeout(location.reload(true),3);
+        });
       })(jQuery, Drupal);
- 
+
 }

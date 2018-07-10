@@ -1,0 +1,6 @@
+name: custom content type
+description: creating a custom content type
+type: module
+core: 8.x
+dependencies:
+  -node
