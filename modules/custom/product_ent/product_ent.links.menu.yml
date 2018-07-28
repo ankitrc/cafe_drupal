@@ -1,0 +1,18 @@
+
+# Product menu items definition
+entity.product.collection:
+  title: 'Product list'
+  route_name: entity.product.collection
+  description: 'List Product entities'
+  parent: system.admin_structure
+  weight: 100
+
+
+# Product type menu items definition
+entity.product_type.collection:
+  title: 'Product type'
+  route_name: entity.product_type.collection
+  description: 'List Product type (bundles)'
+  parent: system.admin_structure
+  weight: 99
+

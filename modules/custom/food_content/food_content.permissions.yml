@@ -1,0 +1,30 @@
+add food data entities:
+  title: 'Create new Food data entities'
+
+administer food data entities:
+  title: 'Administer Food data entities'
+  description: 'Allow to access the administration form to configure Food data entities.'
+  restrict access: true
+
+delete food data entities:
+  title: 'Delete Food data entities'
+
+edit food data entities:
+  title: 'Edit Food data entities'
+
+view published food data entities:
+  title: 'View published Food data entities'
+
+view unpublished food data entities:
+  title: 'View unpublished Food data entities'
+
+view all food data revisions:
+  title: 'View all Food data revisions'
+
+revert all food data revisions:
+  title: 'Revert all Food data revisions'
+  description: 'Role requires permission <em>view Food data revisions</em> and <em>edit rights</em> for food data entities in question or <em>administer food data entities</em>.'
+
+delete all food data revisions:
+  title: 'Delete all revisions'
+  description: 'Role requires permission to <em>view Food data revisions</em> and <em>delete rights</em> for food data entities in question or <em>administer food data entities</em>.'

@@ -1,0 +1,69 @@
+<?php
+
+/**
+ * @file
+ * Contains food_content.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function food_content_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the food_content module.
+    case 'help.page.food_content':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('My Awesome Module') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+// function food_content_theme() {
+//   return [
+//     'food_content' => [
+//       'render element' => 'children',
+//     ],
+//   ];
+// }
+
+/**
+ * Implements hook_theme().
+ */
+function food_content_theme() {
+  $theme = [];
+  $theme['food_data'] = [
+    'render element' => 'elements',
+    'file' => 'food_data.page.inc',
+    'template' => 'food_data',
+  ];
+  $theme['food_data_content_add_list'] = [
+    'render element' => 'content',
+    'variables' => ['content' => NULL],
+    'file' => 'food_data.page.inc',
+  ];
+  return $theme;
+}
+
+/**
+* Implements hook_theme_suggestions_HOOK().
+*/
+function food_content_theme_suggestions_food_data(array $variables) {
+  $suggestions = [];
+  $entity = $variables['elements']['#food_data'];
+  $sanitized_view_mode = strtr($variables['elements']['#view_mode'], '.', '_');
+
+  $suggestions[] = 'food_data__' . $sanitized_view_mode;
+  $suggestions[] = 'food_data__' . $entity->bundle();
+  $suggestions[] = 'food_data__' . $entity->bundle() . '__' . $sanitized_view_mode;
+  $suggestions[] = 'food_data__' . $entity->id();
+  $suggestions[] = 'food_data__' . $entity->id() . '__' . $sanitized_view_mode;
+  return $suggestions;
+}

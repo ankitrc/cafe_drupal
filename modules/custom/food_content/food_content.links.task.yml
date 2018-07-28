@@ -1,0 +1,23 @@
+# Food data routing definition
+
+entity.food_data.canonical:
+  route_name: entity.food_data.canonical
+  base_route: entity.food_data.canonical
+  title: 'View'
+
+entity.food_data.edit_form:
+  route_name: entity.food_data.edit_form
+  base_route: entity.food_data.canonical
+  title: 'Edit'
+
+entity.food_data.version_history:
+  route_name: entity.food_data.version_history
+  base_route: entity.food_data.canonical
+  title: 'Revisions'
+
+entity.food_data.delete_form:
+  route_name:  entity.food_data.delete_form
+  base_route:  entity.food_data.canonical
+  title: Delete
+  weight: 10
+
