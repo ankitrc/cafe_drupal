@@ -1,0 +1,69 @@
+<?php
+
+/**
+ * @file
+ * Contains product_ent.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function product_ent_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the product_ent module.
+    case 'help.page.product_ent':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('all fields in same table') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+// function product_ent_theme() {
+//   return [
+//     'product_ent' => [
+//       'render element' => 'children',
+//     ],
+//   ];
+// }
+
+/**
+ * Implements hook_theme().
+ */
+function product_ent_theme() {
+  $theme = [];
+  $theme['product'] = [
+    'render element' => 'elements',
+    'file' => 'product.page.inc',
+    'template' => 'product',
+  ];
+  $theme['product_content_add_list'] = [
+    'render element' => 'content',
+    'variables' => ['content' => NULL],
+    'file' => 'product.page.inc',
+  ];
+  return $theme;
+}
+
+/**
+* Implements hook_theme_suggestions_HOOK().
+*/
+function product_ent_theme_suggestions_product(array $variables) {
+  $suggestions = [];
+  $entity = $variables['elements']['#product'];
+  $sanitized_view_mode = strtr($variables['elements']['#view_mode'], '.', '_');
+
+  $suggestions[] = 'product__' . $sanitized_view_mode;
+  $suggestions[] = 'product__' . $entity->bundle();
+  $suggestions[] = 'product__' . $entity->bundle() . '__' . $sanitized_view_mode;
+  $suggestions[] = 'product__' . $entity->id();
+  $suggestions[] = 'product__' . $entity->id() . '__' . $sanitized_view_mode;
+  return $suggestions;
+}

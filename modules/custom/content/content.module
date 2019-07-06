@@ -2,8 +2,11 @@
   function content_theme($existing, $type, $theme, $path){
     return [ 
       'my_template' => [
-      'variables' => ['test_var' => NULL, 'a' => NULL, 'categ' => NULL,'htmls' => NULL],
+      'variables' => ['test_var' => NULL, 'a' => NULL, 'categ' => NULL,'htmls' => NULL,'s' => NULL, ],
       // 'render element' => 'forms',
+      ],
+      'cart' => [
+        'variables' => ['data' => NULL,],
       ],
     ];
   } 

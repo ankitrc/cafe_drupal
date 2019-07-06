@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains form_block.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function form_block_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the form_block module.
+    case 'help.page.form_block':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('a block containing form') . '</p>';
+      return $output;
+
+    default:
+  }
+}

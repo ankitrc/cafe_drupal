@@ -1,0 +1,7 @@
+cont.some:
+  path: /tests
+  defaults:
+    _controller: \Drupal\cont\Controller\Controller::control
+    _title: 'OK'
+  requirements:
+    _permission: access content

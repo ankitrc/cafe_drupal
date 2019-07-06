@@ -1,0 +1,24 @@
+# core.entity_form_display.node.customProduct.default.yml
+langcode: en
+status: true
+dependencies:
+    config:
+        - field.field.node.customProduct.body
+        - node.type.customProduct
+    module:
+        - text
+        - user
+id: node.customProduct.default
+targetEntityType: node
+bundle: customProduct
+mode: default
+content:
+    body:
+        label: hidden
+        type: text_textarea_with_summary
+        weight: 101
+        settings: {  }
+        third_party_settings: {  }
+    links:
+        weight: 100
+hidden: {  }

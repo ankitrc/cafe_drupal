@@ -1,0 +1,6 @@
+name: Book Detail
+type: module
+description: 'Adds Book content type.'
+core: 8.x
+dependencies:
+  - node

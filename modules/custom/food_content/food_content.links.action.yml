@@ -1,0 +1,11 @@
+entity.food_data.add_form:
+  route_name: entity.food_data.add_page
+  title: 'Add Food data'
+  appears_on:
+    - entity.food_data.collection
+entity.food_data_type.add_form:
+  route_name: entity.food_data_type.add_form
+  title: 'Add Food data type'
+  appears_on:
+    - entity.food_data_type.collection
+

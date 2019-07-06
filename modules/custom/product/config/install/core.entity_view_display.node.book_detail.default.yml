@@ -1,0 +1,32 @@
+langcode: en
+status: true
+dependencies:
+    config:
+        - field.field.node.book_detail.body
+        - field.field.node.book_detail.full_name
+        - node.type.book_detail
+    module:
+        - text
+        - user
+id: node.book_detail.default
+targetEntityType: node
+bundle: book_detail
+mode: default
+content:
+    body:
+        label: hidden
+        type: text_default
+        weight: 101
+        settings: {  }
+        third_party_settings: {  }
+    links:
+        weight: 100
+    full_name:
+        label: hidden
+        type: text_default
+        weight: 101
+        settings: {  }
+        third_party_settings: {  }
+    links:
+        weight: 100
+hidden: {  }

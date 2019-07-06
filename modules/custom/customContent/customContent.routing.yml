@@ -1,0 +1,33 @@
+content.cnt1:
+  path: /customContent
+  defaults:
+    _title: 'custom content'
+    _controller: Drupal\customContent\cont\display::control
+  requirements:
+    _permission: 'access content'
+  
+content.cnt2:
+  path: /new-cart-content
+  defaults:
+    _title: 'cart'
+    _controller: Drupal\customContent\cart\cart::control
+  requirements:
+    _permission: 'access content'
+  
+content.cnt3:
+  path: /update
+  defaults:
+    _title: 'cart'
+    _controller: Drupal\customContent\cont\check::control
+  requirements:
+    _permission: 'access content'
+
+# content.cnt2:
+#   path: /content
+#   defaults:
+#     _title: 'custom content'
+#     # _form: Drupal\content\forms\frm
+#     _controller: Drupal\content\cont\display::control
+#   requirements:
+#     _permission: 'access content'
+

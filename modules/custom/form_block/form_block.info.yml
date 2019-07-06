@@ -1,0 +1,5 @@
+name: 'form_block'
+type: module
+description: 'a block containing form'
+core: 8.x
+package: 'Custom'

@@ -3,11 +3,19 @@ content.cnt1:
   defaults:
     _title: 'custom content'
     # _form: Drupal\content\forms\frm
-    _controller: Drupal\content\cont\display::control
+    _controller: Drupal\content\cont1\display1::control1
   requirements:
     _permission: 'access content'
   
-
+content.cnt2:
+  path: /cart-content
+  defaults:
+    _title: 'custom content'
+    # _form: Drupal\content\forms\frm
+    _controller: Drupal\content\cart1\cart1::control1
+  requirements:
+    _permission: 'access content'
+  
 # content.cnt2:
 #   path: /content
 #   defaults:
@@ -16,5 +24,4 @@ content.cnt1:
 #     _controller: Drupal\content\cont\display::control
 #   requirements:
 #     _permission: 'access content'
-  
 

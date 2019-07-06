@@ -1,0 +1,12 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      -customContentType
+name: 'custom product'
+type: 'customProduct'
+description: 'creating a custom content type'
+help: ''
+new_revision: false
+display_submitted: true

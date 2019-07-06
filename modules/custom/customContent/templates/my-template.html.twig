@@ -1,0 +1,34 @@
+{{ attach_library('customContent/basics') }}
+<div id="ak"></div>
+<div>
+	<div>
+		{{htmls}}
+	</div>
+	<div> 
+		{% for key , value in a %}
+			<div class = "col-sm-4">
+			{% for k,v in value %}
+				{% if k == 0 %}
+					<div> <b> {{v}} </b> </div>
+				{# {% endif %} #}
+				{% elseif k == 1 %}
+					<div> <img src={{v}} alt="NA" height="100" width ="100"> </div>
+				{# {% endif %} #}
+				{% elseif k == 2 %}
+					<div> price : {{v}} </div>
+				{# {% endif %} #}
+				{% elseif k == 3 %}
+					<div> category : {{v}} </div>
+				{% elseif k == 4%}
+				{# <form method = "post" action = ""> #}
+					<div> <button name = "{{v}}" value = "{{v}}" onclick = "sendData(this.value)" >add to cart</button> </div>
+				{# </form> #}
+				{% endif %}
+
+			{% endfor %}
+			</div>
+		{% endfor %}
+
+	</div>
+
+</div>

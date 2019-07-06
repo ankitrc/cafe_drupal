@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - book_detail
+name: 'Book Detail'
+type: book_detail
+description: 'Content type that can be used to add <em>Book information</em> page.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

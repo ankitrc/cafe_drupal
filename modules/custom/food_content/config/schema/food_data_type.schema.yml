@@ -1,0 +1,12 @@
+food_content.food_data_type.*:
+  type: config_entity
+  label: 'Food data type config'
+  mapping:
+    id:
+      type: string
+      label: 'ID'
+    label:
+      type: label
+      label: 'Label'
+    uuid:
+      type: string

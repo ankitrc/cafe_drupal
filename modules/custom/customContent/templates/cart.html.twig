@@ -1,0 +1,23 @@
+{{ attach_library('customContent/basics') }}
+<div id="rm">  </div>
+<div>
+
+    <table width="100%">
+    <tr><th> name </th> <th>image</th> <th>price</th> <th>category</th> <th>quantity</th> <th>remove</th> </tr>
+    {% for key,ct in data %}
+        {# <div> key : {{key}} </div> never #}
+        <tr>
+        {% for d , c in ct %}
+          {% if d == 1%}
+            <td><img src={{c}} height="30" width="30"> </td>
+						{% elseif d == 5 %}
+						<td> <button name = "{{c}}" value = "{{c}}" onclick = "removeData(this.value)"> remove </button> </td>
+            {% else %}
+                    <td>{{c}}</td>
+            {% endif %}
+        {% endfor %}
+        </tr>
+    {% endfor %}
+    </table>
+
+</div>

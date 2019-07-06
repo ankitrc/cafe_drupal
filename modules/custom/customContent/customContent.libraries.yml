@@ -1,0 +1,6 @@
+basics:
+  version: 1.x
+  js:
+    js/front.js: {}
+  dependencies:
+    - core/jquery
